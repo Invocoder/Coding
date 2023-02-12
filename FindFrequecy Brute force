@@ -1,5 +1,7 @@
 //Question link: https://www.hackerrank.com/contests/smart-interviews/challenges/si-finding-frequency/problem
 //CODE
+
+//TC: O(N)
 #include <cmath>
 #include <cstdio>
 #include <vector>
