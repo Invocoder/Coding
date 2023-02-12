@@ -1,0 +1,40 @@
+//Question link: https://www.hackerrank.com/contests/smart-interviews/challenges/si-finding-frequency/problem
+//CODE
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+    int q;
+    cin>>q;
+    int Q[q];
+    for(int i=0;i<n;i++)
+    {
+        cin>>Q[i];
+    }
+    for(int i=0;i<q;i++)
+    {
+        int c=0;
+        for(int j=0;j<n;j++)
+        {
+            if(arr[j]==Q[i])
+            {
+                c++;
+            }
+        }
+        cout<<c<<endl;
+    }
+    return 0;
+}
